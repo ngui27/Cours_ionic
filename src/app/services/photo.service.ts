@@ -10,8 +10,11 @@ const { Camera, Filesystem, Storage } = Plugins;
   providedIn: 'root'
 })
 export class PhotoService {
+  //define an array of Photos, which will contain a reference to each photo captured with the Camera.
+  public photos: Photo[] = [];
 
   constructor() { }
+
   public async addNewToGallery() {
     // Take a photo
     const capturedPhoto = await Camera.getPhoto({
@@ -19,5 +22,17 @@ export class PhotoService {
       source: CameraSource.Camera, 
       quality: 100 
     });
+    //newly captured photo to the beginning of the Photos array
+    this.photos.unshift({
+      filepath: "soon...",
+      webviewPath: capturedPhoto.webPath
+    });
   }
+
+}
+
+export interface Photo {
+  filepath: string;
+  webviewPath: string;
+  
 }
