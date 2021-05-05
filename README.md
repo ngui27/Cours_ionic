@@ -1,2 +1,5 @@
 # Application mobile : Photo Gallery
-*Galerie photo dévoloppée grâce a la documentation officiel de Ionic*
+
+_Galerie photo dévoloppée grâce a la documentation officiel de Ionic_
+
+description a venir
