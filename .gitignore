@@ -6,7 +6,7 @@
 .tmp
 *.tmp
 *.tmp.*
-*.sublime-project
+*.sublime-proje
 *.sublime-workspace
 .DS_Store
 Thumbs.db
